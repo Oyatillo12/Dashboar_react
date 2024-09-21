@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    background-color: rgba(159, 162, 180, 0.08);
+    color: #DDE2FF;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #DDE2FF;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.topcards:hover {
+    border-color: #3751FF;
+}
+
+.topcards:hover>strong {
+    color: #3751FF;
+}
+
+.topcards:hover>span {
+    color: #3751FF;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.routers {
+    overflow-y: auto;
+    height: 100vh;
+}
